@@ -1,0 +1,47 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{geometry}
+\usepackage{subfiles}
+
+\newgeometry{
+    top=1in,
+    bottom=1in,
+    inner=1in,
+    outer=1in,
+    paper=a4paper
+}
+
+\title{Software-Defined Satellite}
+\author{Ali Malik}
+\date{March 13\textsuperscript{th} 2022}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\listoffigures
+
+\chapter{Introduction}
+\subfile{sections/intro}
+
+\chapter{Design}
+\subfile{sections/hardware}
+
+\chapter{Applications}
+\subfile{sections/applications}
+
+\chapter{Players, Platforms, and Opportunities}
+\subfile{sections/players_platforms}
+
+\chapter{Conclusion}
+\subfile{sections/conclusion}
+
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\end{document}
